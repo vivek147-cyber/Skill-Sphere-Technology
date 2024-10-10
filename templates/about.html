@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block desc %} 
+{{ block.super }}
+<meta name="description" content="We believe that hard work commitment and a proper guidance can help a student in achieving their dreams"/>
+{% endblock %}
+{% block title %}About Us{% endblock title %}
+
+{% block css %}
+{{ block.super }}
+<link href="{% static 'css/about.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+<section class="bg-dark dark-mode position-relative d-flex align-items-center min-vh-100 overflow-hidden"  style="background-image: url('{% static "images/about.jpg" %}');background-position: center;
+background-blend-mode: multiply;">
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 proheading fw-bold " style="color: #ffffff;">ABOUT US</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4" style="color:white; font-size:26px;">Empowering the next generation of tech professionals through hands-on software and IT training and software development. Transforming knowledge into skills for a successful career in technology.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="#team" type="button" class="btn btn-lg px-4 gap-3 rounded-pill" style="color: #ffffff;
+      
+       border: 3px solid #f66c3b;
+        box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 7%);" >Meet Our Team <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        <a href="#workflow" type="button" class="btn  btn-lg px-4 rounded-pill" style="background: #f66c3b;
+        color: #000000;
+        box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 7%);">Our WorkFlow <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+      </div>
+    </div>
+  </div> 
+</section>
+  <br>
+  <br>
+  <h1>Our Project <span>Timeline</span></h1>
+
+<div class="container lg" id="workflow">
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Phase One: Requirement Analysis</h3>
+         <p>During the requirement analysis phase, the project's scope and objectives are clearly defined. This involves gathering functional and non-functional requirements from stakeholders, understanding user needs, and identifying potential risks. The goal is to establish a detailed Software Requirement Specification (SRS) document that outlines what the software should accomplish, ensuring alignment between business goals and technical execution.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Phase Two: Design</h3>
+         <p>In this phase, the software's architecture and design are created based on the requirements gathered. This includes system design, database design, and user interface design. High-level design focuses on the system’s architecture, while detailed design looks at modules, data flow, and algorithms. The objective is to provide a blueprint that guides developers on how to implement the system efficiently.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Phase Three: Development</h3>
+         
+         <p>The development phase involves writing the actual code for the software. This is where developers follow the design specifications to create functional modules and integrate them. The code is usually developed in iterations, following the chosen software development methodology (e.g., Agile, Waterfall). Collaboration between front-end, back-end, and database developers ensures that the software meets the design and requirement standards.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-left">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Phase Four: Testing</h3>
+         
+         <p>Once the development is complete, the software undergoes rigorous testing to identify and fix any defects or bugs. This phase includes different levels of testing such as unit testing, integration testing, system testing, and user acceptance testing (UAT). The aim is to ensure that the software is reliable, performs as expected, and is free of critical issues before being released to users.</p>
+      </div>
+   </div>
+
+   <div class="timeline-block timeline-block-right">
+      <div class="marker"></div>
+      <div class="timeline-content">
+         <h3>Phase Five: Deployment and Maintenance</h3>
+         
+         <p>In this phase, the software is deployed to a production environment where end-users can start using it. This includes setting up the necessary infrastructure and performing any final configurations. After deployment, the maintenance phase begins, where the software is monitored for bugs, performance issues, and feature enhancements. Updates and patches are released as needed to improve the software and ensure its long-term viability.</p>
+      </div>
+   </div>
+</div>
+  
+<section class="py-0 py-xl-5 bg-dark dark-mode" id="team">
+   <div class="container team" style="display: block; padding-left:127px">
+       <div class="row g-3">
+           <!-- Loop through each team member -->
+           {% for member in t %}
+           <div class="col-lg-4 col-md-6 col-sm-12"> <!-- Responsive columns -->
+               <div class="profile-card">
+                   <div class="img">
+                       <!-- Dynamic image source from database -->
+                       <img src="{{ member.image.url }}" alt="{{ member.name }}">
+                   </div>
+                   <div class="caption">
+                       <!-- Dynamic name and title -->
+                       <h3>{{ member.name }}</h3>
+                       <p>{{ member.description }}</p>
+                   </div>
+               </div>
+           </div>
+           {% endfor %}
+       </div>
+   </div>
+</section>
+
+
+{% endblock content %}

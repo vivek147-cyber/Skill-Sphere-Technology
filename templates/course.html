@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block desc %} 
+{{ block.super }}
+<meta name="description" content="We believe that hard work commitment and a proper guidance can help a student in achieving their dreams"/>
+{% endblock %}
+{% block title %}Courses{% endblock title %}
+
+{% block css %}
+{{ block.super }}
+
+<link href="{% static 'css/courses.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+
+{% block content %}
+<center>
+  <section class=" bg-dark dark-mode position-relative d-flex align-items-center min-vh-100 overflow-hidden"  style="background-image: url('{% static "images/corporate.jpg" %}');background-position: center;
+  background-blend-mode: soft-light;">
+  <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 coderchronicles fw-bold " style="color: #ffffff;">CORPORATE TRAINING</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4" style="color:white; font-size:26px;">Elevate Your Team's Potential with Cutting-Edge Corporate Training in Web and App Development – Ignite Innovation and Amplify Skills!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="#stat" type="button" class="btn btn-lg px-4 gap-3 rounded-pill" style="color: #ffffff;
+          border: 3px solid #f66c3b;
+          box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 7%);" >Course Stats<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          <a href="#trainingcourse" type="button" class="btn  btn-lg px-4 rounded-pill" style="background: #f66c3b;
+          color: #000000;
+          box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 7%);">Our Courses<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div>
+      </div>
+    </div> 
+  </section>
+  </center> 
+ <br>
+ <br>
+<section class="py-0 py-xl-5">
+	<div class="container" id="stat">
+		<div class="row g-4">
+			<!-- Counter item -->
+			<div class="col-sm-6 col-xl-3">
+				<div class="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3" style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
+					<span class="display-6 lh-1 mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+            <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+          </svg></span>
+					<div class="ms-4 h6 fw-normal mb-0">
+						<div class="d-flex">
+							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-delay="200" data-purecounter-duration="0">10</h5>
+							<span class="mb-0 h5">K</span>
+						</div>
+						<p class="mb-0">Online Courses</p>
+					</div>
+				</div>
+			</div>
+			<!-- Counter item -->
+			<div class="col-sm-6 col-xl-3">
+				<div class="d-flex justify-content-center align-items-center p-4 bg-blue bg-opacity-10 rounded-3" style="background: whitesmoke;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+					<span class="display-6 lh-1 mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+            <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2Z"/>
+            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783.059-.187.09-.386.09-.593V4a2 2 0 0 0-2-2H2Z"/>
+          </svg></span>
+					<div class="ms-4 h6 fw-normal mb-0">
+						<div class="d-flex">
+							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-delay="200" data-purecounter-duration="0">200</h5>
+							<span class="mb-0 h5">+</span>
+						</div>
+						<p class="mb-0">Expert Teachers</p>
+					</div>
+				</div>
+			</div>
+			<!-- Counter item -->
+			<div class="col-sm-6 col-xl-3">
+				<div class="d-flex justify-content-center align-items-center p-4  rounded-3" style="background: #e783e7e0; ;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+					<span class="display-6 lh-1 mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person-video" viewBox="0 0 16 16">
+            <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2Zm10.798 11c-.453-1.27-1.76-3-4.798-3-3.037 0-4.345 1.73-4.798 3H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1.202Z"/>
+          </svg></span>
+					<div class="ms-4 h6 fw-normal mb-0">
+						<div class="d-flex">
+							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="60" data-purecounter-delay="200" data-purecounter-duration="0">60</h5>
+							<span class="mb-0 h5">K+</span>
+						</div>
+						<p class="mb-0">Online Students</p>
+					</div>
+				</div>
+			</div>
+			<!-- Counter item -->
+			<div class="col-sm-6 col-xl-3">
+				<div class="d-flex justify-content-center align-items-center p-4 bg-info rounded-3" style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
+					<span class="display-6 lh-1 mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+          </svg></i></span>
+					<div class="ms-4 h6 fw-normal mb-0">
+						<div class="d-flex">
+							<h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6" data-purecounter-delay="300" data-purecounter-duration="0">6</h5>
+							<span class="mb-0 h5">K+</span>
+						</div>
+						<p class="mb-0">Certified Courses</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<br>
+<br>
+<div class="container px-5" id="trainingcourse">
+  <center>
+    <h2 class="heading" style="font-family:'Mokoto';color:black;">TRAINING COURSES</h2>
+</center>
+<br>
+<div class="container">
+	<div class="row gx-5 mb-n10 z-1">
+	  {% for i in tcourse %}
+	  <div class="col-lg-4 mb-5">
+		<div class="card" style="border:0px; box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);">
+		  <img src="{{i.image.url}}" class="card-img-top" alt="{{ i.name }}" style="height: 250px; object-fit: cover;">>
+		  <div class="card-body">
+			<h3 class="card-title fw-bold">{{ i.name }}</h3>
+		  </div>
+  
+		  <div class="card-body">
+			<!-- Shortened Description with Read More -->
+			{% if i.description|length > 100 %}
+			<p>{{ i.description|slice:":100" }}... 
+			  <a href="#" data-bs-toggle="modal" data-bs-target="#descModal{{ i.id }}">Read More</a>
+			</p>
+			{% else %}
+			<p>{{ i.description }}</p>
+			{% endif %}
+			
+			<!-- WhatsApp Link -->
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=9148131155&text=Hello Sir, I want to take this {{i.name}} course. Please send more details about the Course."
+			  type="button" class="btn pro btn-primary btn-lg px-4 gap-3"
+			  style="font-size: 13px; background: #f66c3b; color: #ffffff; border: #f66c3b; box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 7%);">
+			  Get your Courses
+			  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right ms-2">
+				<line x1="5" y1="12" x2="19" y2="12"></line>
+				<polyline points="12 5 19 12 12 19"></polyline>
+			  </svg>
+			</a>
+		  </div>
+		</div>
+	  </div>
+  
+	  <!-- Modal for Full Description -->
+	  <div class="modal fade" id="descModal{{ i.id }}" tabindex="-1" aria-labelledby="descModalLabel{{ i.id }}" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="descModalLabel{{ i.id }}">{{ i.name }} - Full Description</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p>{{ i.description }}</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  
+	  {% endfor %}
+	</div>
+  </div>
+  
+ 
+</div>
+
+<br>
+<br>
+<br>
+
+
+{% endblock content %}
